@@ -1,0 +1,138 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="residencyuser.master.cs" Inherits="user_residencyuser" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+      <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>24 CARAT RESIDENCY USER</title>
+	<!-- BOOTSTRAP STYLES-->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+     <!-- FONTAWESOME STYLES-->
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+        <!-- CUSTOM STYLES-->
+    <link href="assets/css/custom.css" rel="stylesheet" />
+     <!-- GOOGLE FONTS-->
+   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+</head>
+<body>
+     
+        <form id="form1" runat="server">
+          
+    <div id="wrapper">
+         <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="adjust-nav">
+              
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    
+ 
+                </div>
+                <span class="logout-spn" >
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                    <asp:LinkButton ID="lbllogout" runat="server" style="color:#fff;">LOGOUT</asp:LinkButton>
+                    </asp:ContentPlaceHolder>
+                </span>
+            </div>
+        </div>
+       
+        <!-- /. NAV TOP  -->
+        <nav class="navbar-default navbar-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="main-menu">
+                 
+
+
+                    <li class="active-link">
+                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="" class="fa fa-desktop">HyperLink</asp:HyperLink>
+                        
+                    </li>
+                   
+
+                    <li>
+                    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="" class="fa fa-table">HyperLink</asp:HyperLink>
+
+                    </li>
+                    <li>
+                    <asp:HyperLink ID="HyperLink3" runat="server" class="fa fa-edit" NavigateUrl="">HyperLink</asp:HyperLink>
+                        
+                    </li>
+
+
+                    <li>
+                    <asp:HyperLink ID="HyperLink4" runat="server" class="fa fa-qrcode" NavigateUrl="">HyperLink</asp:HyperLink>
+                        
+                    </li>
+                    <li>
+                    <asp:HyperLink ID="HyperLink5" runat="server" class="fa fa-bar-chart-o" NavigateUrl="">HyperLink</asp:HyperLink>
+                        
+                    </li>
+
+                    <li>
+                    <asp:HyperLink ID="HyperLink6" runat="server" class="fa fa-edit" NavigateUrl="">HyperLink</asp:HyperLink>
+                        
+                    </li>
+                    <li>
+                    <asp:HyperLink ID="HyperLink7" runat="server" class="fa fa-table" NavigateUrl="">HyperLink</asp:HyperLink>
+                        
+                    </li>
+                     <li>
+                     <asp:HyperLink ID="HyperLink8" runat="server" class="fa fa-edit" NavigateUrl="">HyperLink</asp:HyperLink>
+                        
+                    </li>
+                    
+                </ul>
+                            </div>
+
+        </nav>
+        <!-- /. NAV SIDE  -->
+        
+ 
+        <div id="page-wrapper" >
+        
+         <div id="page-inner">
+           <div class="row">
+             <div class="col-lg-12">
+               <h1 style ="color:Silver;text-align:center;">24 CARAT RESIDENCY</h1>
+               </div> 
+               </div> <hr/>
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    
+    </div>      
+         <!-- /. PAGE WRAPPER  -->
+        </div>
+        
+    <div class="footer">
+      
+    
+            <div class="row">
+                <div class="col-lg-12" >
+                    &copy;  2014 yourdomain.com | Design by: <a href="http://binarytheme.com" style="color:#fff;" target="_blank">www.binarytheme.com</a>
+                </div>
+            </div>
+        </div>
+          
+          </div>
+          </form> 
+     <!-- /. WRAPPER  -->
+    <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
+    <!-- JQUERY SCRIPTS -->
+    <script src="assets/js/jquery-1.10.2.js"></script>
+      <!-- BOOTSTRAP SCRIPTS -->
+    <script src="assets/js/bootstrap.min.js"></script>
+      <!-- CUSTOM SCRIPTS -->
+    <script src="assets/js/custom.js"></script>
+    
+   
+</body>
+</html>
